@@ -1,5 +1,8 @@
 // Get the modal
 var modalStutter = document.getElementById("myStutterModal");
+var modalBOA= document.getElementById("myBOAModal");
+var modalOptimalex= document.getElementById("myOptimalexModal");
+
 var modalTime = document.getElementById("myTimeModal");
 var modalHomophily = document.getElementById("myHomophilyModal");
 
@@ -12,6 +15,9 @@ var modalAOE = document.getElementById("myAOEModal");
 
 // Get the button that opens the modal
 var btnStutter = document.getElementById("myStutter");
+var btnBOA = document.getElementById("myBOA");
+var btnOptimalex = document.getElementById("myOptimalex");
+
 var btnTime = document.getElementById("myTime");
 var btnHomophily = document.getElementById("myHomophily");
 var btnDrop = document.getElementById("myDrop");
@@ -25,6 +31,10 @@ var closeDrop = document.getElementById("cD");
 var closeWeb = document.getElementById("cW");
 var closePython = document.getElementById("cP");
 var closeAOE = document.getElementById("cA");
+var closeBOA = document.getElementById("cBOA");
+var closeOptimalex = document.getElementById("cO");
+
+
 
 // console.log(closeStutter);
 // var allModals= [];
@@ -36,8 +46,19 @@ var closeAOE = document.getElementById("cA");
 // When the user clicks the button, open the modal 
 btnStutter.onclick = function() {
   modalStutter.style.display = "block";
+  console.log("HELLO")
 
   
+}
+
+btnOptimalex.onclick = function() {
+  modalOptimalex.style.display = "block";
+
+  
+}
+
+btnBOA.onclick = function() {
+  modalBOA.style.display = "block";
 }
 
 btnTime.onclick = function() {
@@ -47,6 +68,7 @@ btnTime.onclick = function() {
 
 btnHomophily.onclick = function() {
   modalHomophily.style.display = "block";
+  console.log("HELLO")
   
 }
 
@@ -98,6 +120,14 @@ closePython.onclick = function() {
 
 closeAOE.onclick = function() {
   modalAOE.style.display = "none";
+}
+
+closeBOA.onclick = function() {
+  modalBOA.style.display = "none";
+}
+
+closeOptimalex.onclick = function() {
+  modalOptimalex.style.display = "none";
 }
 
 

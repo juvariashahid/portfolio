@@ -18,9 +18,19 @@
     <link rel="stylesheet" href="css/modal.css">
 
 
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
     
+  <style>
+    #logo{
+      border-radius: 50%; 
+      height: 200px;
+       /*object-fit: cover;*/
+    }
+    .scale-down{
+      object-fit: scale-down;
+    }
+  </style>
   </head>
   <body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
   
@@ -33,16 +43,14 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <a id="title" class="navbar-brand" href="index.html">Juvaria Shahid</a>
+        <a id="title" class = "navbar-brand" href="index.html">Juvaria Shahid</a>
         <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
           <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="#section-home">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#section-about">About</a></li>
-            <!-- <li class="nav-item"><a class="nav-link" href="#section-services">Services</a></li> -->
             <li class="nav-item"><a class="nav-link" href="#section-portfolio">Portfolio</a></li>
-            <!-- <li class="nav-item"><a class="nav-link" href="#section-resume">Resume</a></li> -->
-            <!-- <li class="nav-item"><a class="nav-link" href="#section-blog">Blog</a></li> -->
-<!--             <li class="nav-item"><a class="nav-link" href="#section-contact">Contact</a></li> -->
+            <li class="nav-item"><a class="nav-link" href="#section-blog">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section-contact">Contact Me</a></li>
           </ul>
         </div>
       </div>
@@ -56,12 +64,12 @@
         <div class="row intro-text align-items-center justify-content-center">
           <div class="col-md-10 text-center">
             <h1 class="site-heading site-animate">Juvaria Shahid<!--  <strong>Jean Smith</strong> --></h1>
-            <p class="lead site-subheading mb-4 site-animate">I'm a junior at Columbia University studying computer science </p>
+            <p class="lead site-subheading mb-4 site-animate">I'm a senior at Columbia University studying computer science </p>
             <!-- <p><a href="#section-about" class="smoothscroll btn btn-primary px-4 py-3">More On Me</a></p> -->
           </div>
         </div>
       </div>
-    </section> <!-- section -->
+    </section> 
 
   
     <section class="site-section" id="section-about">
@@ -75,20 +83,23 @@
             <div class="section-heading">
               <h2>About <strong>Me</strong></h2>
             </div>
-            <p>I am a junior at Columbia University pursuing a B.S in computer science. I am passionate about solving problems using technology, specifically through machine learning and creative technology.</p>
+            <p>I am a senior at Columbia University pursuing a B.S in computer science.</p>
 
-            <p> I am currently a software engineering intern at <a href = "https://www.koodos.com/"> Koodos </a> </p>
+            <p> I am passionate about solving problems using technology, specifically through machine learning and creative technology. </p>
+            <p>I have worked in fintech, legal tech and social media tech</p>
             
-            <p>I am fascinated by the intersection of law and tech. I am working with a team of lawyers and computer scientists under <a href = "https://www.law.columbia.edu/graduate-legal-studies/jsd-program/jsd-candidates-new/Frank-Giaoui"> Dr.Frank Giaoui</a> to research and develop a software to predict the judiciary outcome of litigated cases. </p>
+            <p>I am specifically fascinated by the intersection of law and tech. Alongside my studies, I served as a data analyst/scientist at <a href = "https://www.optimalexsolutions.com/">Optimalex Solutions</a> , where I worked with a team of lawyers and computer scientists under <a href = "https://www.law.columbia.edu/graduate-legal-studies/jsd-program/jsd-candidates-new/Frank-Giaoui"> Dr.Frank Giaoui</a> to research and develop a software to predict the judiciary outcome of litigated cases. </p>
 
-            <p>When I am not programming, I am teaching it. I have been a teaching assistant at the Upperline School of Code for the past 3 summers</p>
+            <p>When I am not programming, I am teaching it. I previously served as a teaching assistant at the<a href = "https://www.upperlinecode.com/"> Upperline School of Code</a>, and I am an active member of the <a href = "https://www.kodewithklossy.com/"> Kode with Klossy </a> initiative. I create viral, educational content on Kode with Klossy's <a href = "https://www.tiktok.com/@typehouse?lang=en"> tiktok page </a>. My videos have garnered millions of views</p>
+
+          
           </div>
         </div>
 
         <div class="row pt-5">
           <div class="col-md-3 mb-3">
             <div class="section-heading">
-              <h2>My <strong>Skills</strong></h2>
+              <h2>My Programming <strong>Skills</strong></h2>
             </div>
           </div>
           <div class="col-md-9">
@@ -333,377 +344,348 @@
         <div class="filters">
                         <ul>
                             <li class="active" data-filter="*">All</li>
-                            <li data-filter=".personal">Work/Personal Projects</li>
-                            <li data-filter=".class">Class Projects</li>
+                            <li data-filter=".personal">Programming Work</li>
+                            <li data-filter=".class">Other Work</li>
                       
                         </ul>
                     </div>
                     
                     <div class="filters-content">
                         <div class="row grid">
-                          <!-- STUTTER -->
+                          <!-- Bank of America -->
+                          <div class="single-portfolio col-sm-4 all personal">
+                              <div class="relative">
+                                <div class="thumb">
+                                  <div class="overlay overlay-bg"></div>
+                                   <center> <img id = "logo" src="images/download.png" alt=""> </center>
+                                </div>                                
+                              </div>
+                              <div class="p-inner">
+                                <h4 id="myBOA"><u> Bank of America </u></h4>
+                                <div class="cat"> Summer 2020 Internship </div>
+                              </div>          
+                              <div id="myBOAModal" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                  <span id="cBOA" class=" close">&times;</span>
+                                   <center> <h5> I worked as a software engineering intern at the Bank of America </h5> </center>
+                                    <br>
+                                    <p> I built an API that allows users to upload and handle video data to Akamai for the Bank of America mobile application </p>
+                                    <p> I also led a team of 30+ interns to successfully convert a manual reporting process into an automated reporting engine while supporting the migration and consolidation of the underlying data source </p>
+                                    <p> <b> Tools/Languages I used: </b>
+                                      <ul>
+                                        <li> Python </li>
+                                        <li> SQL </li>
+                                      </ul>
+                                    </p>
+                                </div>
+                              </div>     
+                            </div>
+                           
+                            <!-- Optimalex -->
                             <div class="single-portfolio col-sm-4 all personal">
                               <div class="relative">
                                 <div class="thumb">
                                   <div class="overlay overlay-bg"></div>
-                                   <img class="image img-fluid" src="images/stutter.png" alt="">
+                                   <center> <img id = "logo" src="images/opt.jpeg" alt=""> </center>
+                                </div>                                
+                              </div>
+                              <div class="p-inner">
+                                <h4 id="myOptimalex"><u> Optimalex </u></h4>
+                                <div class="cat"> Data Scientist </div>
+                              </div>          
+                              <div id="myOptimalexModal" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                  <span id="cO" class=" close">&times;</span>
+                                   <center> <h5> I worked as a Data Scientist for Optimalex, a litigation decision support solution</h5> </center>
+                                   <a class = "link" href = "https://www.optimalexsolutions.com/"> Check out Optimalex </a>
+                                    <br>
+                                    <p> Optimalex is a litigation decision support solution designed for legal professionals in the U.S. and in France. </p>
+                                    <p> Through cutting edge expertise and proprietary database, Optimalex is developing a solution software that helps our clients and partners to reduce their legal risk and optimize the economic return on their judicial investment.</p>
+                                    <p> I worked with a team of lawyers and computer scientists (under Dr.Frank Gioui) to research and develop a software to predict the judiciary outcome of contract-breach law cases in the US </p>
+                                    <p> I used NLP techniques to process litigations and extract valuable information that was fed to machine learning algorithms to correctly predict the outcome of future litigations </p>
+                                    <p> <b> Tools/Languages I used: </b>
+                                      <ul>
+                                        <li> Python </li>
+                                        <li> NLP </li>
+                                        <li> SQL </li>
+                                      </ul>
+                                    </p>
+                                  
                                 </div>
-                                <!-- <a href="images/stutter.png" class="img-pop-up">  
+                              </div>     
+                            </div>
+                            <!-- Upperline School of Code -->
+                            <div class="single-portfolio col-sm-4 all class">
+                              <div class="relative">
+                                <div class="thumb">
+                                  <div class="overlay overlay-bg"></div>
+                                   <center> <img id = "logo" src="images/up.jpg" alt=""> </center>
+                                </div>                                
+                              </div>
+                              <div class="p-inner">
+                                <h4 id="myUpperline"><u> Upperline School of Code </u></h4>
+                                <div class="cat"> Instructional Teaching Assistant </div>
+                              </div>          
+                              <div id="myUpperlineModal" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                  <span id="cU" class=" close">&times;</span>
+                                   <center> <h5> I have served as a teaching assistant for multiple boot camps at the <a class = "link" href = "upperlinecode.com/student-project-gallery"> Upperline School of Code </a> </h5> </center>
+                                    <br>
+                                    <p> The Upperline School of Code is where I found my passion for teaching. </p>
+                                    <p> I have taught courses including Introduction to Software Engineering in Ruby, Introduction to Software Engineering in JavaScript and Introduction to JavaScript and Virtual Reality </p> 
+                                    <p> Material taught includes: HTML/CSS, Bootstrap & Materialize, JavaScript (Node.js, Express.js, p5.js), A-Frame for virtual reality, Ruby (and Sinatra framework), API integration from entry level to delivery of sophisticated final projects that included fully functional web applications deployed with GitHub pages and Heroku. </p> 
+                                  
+                                </div>
+                              </div>     
+                            </div>
+                            <!-- TypeHouse -->
+                            <div class="single-portfolio col-sm-4 all class">
+                              <div class="relative">
+                                <div class="thumb">
+                                  <div class="overlay overlay-bg"></div>
+                                   <center> <img id = "logo" src="images/download.jpg" alt=""> </center>
+                                </div>                                
+                              </div>
+                              <div class="p-inner">
+                                <h4 id="myTT"><u> Kode with Klossy</u></h4>
+                                <div class="cat"> Programming Content Creator </div>
+                              </div>          
+                              <div id="myTTModal" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                  <span id="cTT" class=" close">&times;</span>
+                                   <center> <h5> I create educational content for Kode with Klossy's official Tiktok page </h5> </center>
+                                    <br>
+                                    <p> My journey with  <a class = "link" href = "https://www.kodewithklossy.com/">  Kode with Klossy </a> began in 2015 when Karlie Kloss selected me as a scholar to attend a 2 week web development boot camp </p>
+                                    <center> <iframe width="420" height="315" src="https://www.youtube.com/embed/XaQBZwxbcGE"></iframe> </center>
+                                    <p> I then joined the Kode with Klossy team to teach bootcamps to new scholars, and take part in marketing campaign such as the Kode with Klossy sweatshirt campaign.</p>
+                                    <center> <img width="300" src = "images/photo.jpg"> </center>
+                                    <br> 
+                                    <p> I currently create educational content for <a class = "link" href = "https://www.tiktok.com/@typehouse?source=h5_m"> Kode with Klossy's official tikok page </a> as part of Tiktok's #LearnOnTikTok initiative. My videos have garnered millions of views. </p> 
+                                </div>
+                              </div>     
+                            </div>
+                            <!-- HeartfullyHuman -->
+                            <div class="single-portfolio col-sm-4 all class">
+                              <div class="relative">
+                                <div class="thumb">
+                                  <div class="overlay overlay-bg"></div>
+                                   <center> <img id = "logo" src="images/unnamed.jpg" alt=""> </center>
+                                </div>                                
+                              </div>
+                              <div class="p-inner">
+                                <h4 id="myHH"><u> HeartfullyHuman </u></h4>
+                                <div class="cat"> Co-Founder </div>
+                              </div>          
+                              <div id="myHHModal" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                  <span id="cHH" class=" close">&times;</span>
+                                   <center> <h5> I am co-founder of Heartfully Human, a platform aimed at empowering women </h5> </center>
+                                    <br>
+                                    <p> Heartfully Human aims to empowering other girls to pursue their dreams without being drained or discourages by the noise of society and voices of others. So many young girls struggle with their identity and the chaos that the world throws at them. <p> 
+                                    <center> <img  src="images/HH.png" alt=""> </center> 
+                                    <br> 
+                                    <br> 
+                                    <p> One of the major goals of heartfullyhuman is to: 
+                                    1) help young girls discover what sparks joy and 
+                                    2) empower and inspire young women to be authentic to who they truly are in whatever phase of life they are in. </p>
+                                    <p> Being a professional working woman does not mean we need to sacrifice other angles of our lives. It requires us to “lean in” as Sheryl Sandberg would say and give each angle of our life our complete and undivided attention. To do so, other areas of our lives need find tuning. This is a heartful human - an individual who is constantly leaning in and fine-tuning each angle of their life in the consistent struggle of self-improvement. </p>
+
+                                    <p> Through <a class = "link" href = "https://www.instagram.com/heartfullyhuman/"> Instagram  </a> and  <a class = "link" href = "https://www.tiktok.com/@heartfullyhuman"> TikTok </a>, we are building a community of similar minds and ideas. </p>
+
+                                    <p> We cover a variety of topics: parenting, self-care, productivity, inner peace, and mental & spiritual well being. </p>
+
+                                    <p> We emphasize that setting the right intention iin these areas of life does not depend on money or how much you buy. Rather it depends on your passion and drive to complete your goals. Furthermore, we want to internalize that intention is everything.  </p>
+
+                                </div>
+                              </div>     
+                            </div>
+                            <!-- STUTTER -->
+                            <div class="single-portfolio col-sm-4 all personal">
+                              <div class="relative">
+                                <div class="thumb">
+                                  <div class="overlay overlay-bg"></div>
+                                   <center> <img id = "logo" width = "350px" src="images/stutter.png" alt=""> </center>
+                                </div>
+                               <!--  <a href="images/stutter.png" class="img-pop-up">  
                                 <div class="middle">
                                   <div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
                                 </div>
-                                 </a>   -->                                
+                                 </a>  -->                                 
                               </div>
-                      <div class="p-inner">
-                        <h4 id="myStutter"><u> Stutter App </u></h4>
-                        <div class="cat">A Machine Learning App </div>
-                      </div>          
-
-
-
-
-                          <div id="myStutterModal" class="modal">
-
-                          <!-- Modal content -->
-                          <div class="modal-content">
-                            <span id="cS" class=" close">&times;</span>
-                             <center> <h5> Stutter App uses machine learning to detect stutters in speech </h5> </center>
-                             <br>
-                              <a class = "link" href = "http://juvariashahid.pythonanywhere.com/" > Open project </a>
-                              <a class = "link" href = "pythonanywhere.com/juvariashahid"> View my code </a>
-
-                              <br>
-
-                              <p> This is a passion project I created in my sophmore year to get my feet wet with machine learning. I came up with the idea when I noticed that some of my closest freinds who stuttered often were not able to identify when/where they stuttered. </p>
-                              <p> In addition, I was inspired by <a class = "link" href = "http://web.stanford.edu/class/cs224s/reports/Manu_Chopra.pdf" >this </a> paper written by Stanford undergraduates: . After training my own model, I found that my model did better than theirs.</p>
-                              <p> <b> Tools/Languages I used: </b>
-                                <ul>
-                                  <li> Python </li>
-                                  <li> Javascript</li>
-                                  <li> Google Colab Notebook </li>
-                                  <li> Flask </li>
-                                </ul>
-                              </p>
-
-                              <p> <b> Skills I learned or became better at: </b>
-                                <ul>
-                                  <li> Collecting Data: I used the data from University Of London's Speech Archive. I manually annotated over 50 audio files using Praat (link).  </li>
-                                  <li> Training Data: I built a feature extraction system. Some notable features I looked for in my audio files were: MCC....</li>
-                                  <li>Connected my model with my webpage to run it live: I used python anywhere to export my model easily and create my webpage</li>
-                                  <li>Data Visualization: I used p5.js, seawave.js to create this visual to show stuttered instances in speech: (attach image)</li>
-                                </ul>
-                              </p>
-                          </div>
-
-                        </div>     
-
-
-
+                              <div class="p-inner">
+                                <h4 id="myStutter"><u> Stutter App </u></h4>
+                                <div class="cat">A Machine Learning App </div>
+                              </div>          
+                              <div id="myStutterModal" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                  <span id="cS" class=" close">&times;</span>
+                                   <center> <h5> Stutter App uses machine learning to detect stutters in speech </h5> </center>
+                                   <br>
+                                    <a class = "link" href = "http://juvariashahid.pythonanywhere.com/" > Open project </a>
+                                    <a class = "link" href = "pythonanywhere.com/juvariashahid"> View my code </a>
+                                    <br>
+                                    <p> This is a passion project I created in my sophmore year to get my feet wet with machine learning. I came up with the idea when I noticed that some of my closest freinds who stuttered often were not able to identify when/where they stuttered. </p>
+                                    <p> In addition, I was inspired by <a class = "link" href = "http://web.stanford.edu/class/cs224s/reports/Manu_Chopra.pdf" >this </a> paper written by Stanford undergraduates: . After training my own model, I found that my model did better than theirs.</p>
+                                    <p> <b> Tools/Languages I used: </b>
+                                      <ul>
+                                        <li> Python </li>
+                                        <li> Javascript</li>
+                                        <li> Google Colab Notebook </li>
+                                        <li> Flask </li>
+                                      </ul>
+                                    </p>
+                                    <p> <b> Skills I learned or became better at: </b>
+                                      <ul>
+                                        <li> Collecting Data: I used the data from University Of London's Speech Archive. I manually annotated over 50 audio files using Praat (link).  </li>
+                                        <li> Training Data: I built a feature extraction system. Some notable features I looked for in my audio files were: MCC....</li>
+                                        <li>Connected my model with my webpage to run it live: I used python anywhere to export my model easily and create my webpage</li>
+                                        <li>Data Visualization: I used p5.js, seawave.js to create this visual to show stuttered instances in speech: (attach image)</li>
+                                      </ul>
+                                    </p>
+                                </div>
+                              </div>     
                             </div>
-
 
                             <div class="single-portfolio col-sm-4 all personal">
                               <div class="relative">
                                 <div class="thumb">
                                   <div class="overlay overlay-bg"></div>
-                                   <img class="image img-fluid" src="images/codeU.png" alt="">
-                                </div>
-                  <!-- <a href="images/codeU.png" class="img-pop-up">  
-                    <div class="middle">
-                      <div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
-                    </div>
-                </a>    -->                               
+                                  <center> <img id = "logo" src="images/download-1.jpg" alt=""> </center>
+                                </div>                              
                               </div>
+                              <div class="p-inner">
+                                <h4 id="myTime"> <u> Google </u> </h4>
+                                <div class="cat"> CodeU Fellow </div>
+                              </div>
+                              <div id="myTimeModal" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                  <span id="cT" class="close">&times;</span>
+                                   <center> <h5> I was a Google CodeU Fellow in 2019 </h5> </center>
+                                  <br>
+                                  <p> I collaborated with a team of peers to design and implement a web application using Java, JavaScript, HTML and CSS over the course of 10 weeks, leveraging various Google Cloud Platform APIs, including App Engine and Datastore. </p>
+                                  <p> I practiced industry best practices such as: contributing to open source software using Git and GitHub, conducting code reviews with/for teammates, extending an existing codebase, participating in distributed development, designing new components and interfaces and leading them to completion.</p>
 
-
-                <div class="p-inner">
-                  <h4 id="myTime"> <u> Time Manager </u> </h4>
-                  <div class="cat">A Google CodeU Project </div>
-                </div>    
-
-
-                          <div id="myTimeModal" class="modal">
-
-                          <!-- Modal content -->
-                          <div class="modal-content">
-                            <span id="cT" class="close">&times;</span>
-                             <center> <h5> Time Manager smartly prioritizes your tasks! </h5> </center>
-
-                             <br> 
-
-                             <p> This project was the final project my team and I created for Google CodeU </p> 
-                       
-
-                            <a class = "link" href = "https://su19-codeu-28-9472.appspot.com"> Open project </a>
-                            <a class = "link" href = "https://github.com/juvariashahid/team-28-codeu"> View my code </a>
-
-                           <!-- <p> This project was the final project my team and I created for Google CodeU </p>  -->
-
-                          <br>
-                            <p> <b> Tools/Languages I used: </b>
-                              <ul>
-                                <li> Javascript</li>
-                                <li> Java </li>
-                                <li> HTML/CSS </li>
-                              </ul>
-                            </p>
-
-                            <p> <b> Skills I learned or became better at: </b>
-                              <ul>
-                                <li> Using the Google Calendar API  </li>
-                                <li> Using DataStore and Appengine</li>
-                                <li>Working collaborativley in group and participating in code reviews</li>
-                            
-                              </ul>
-                            </p>
-                          </div>
-
-                        </div>        
-
-
-
-
-
+                                    <p> <b> Tools/Languages I used: </b>
+                                      <ul>
+                                        <li> Javascript</li>
+                                        <li> Java </li>
+                                        <li> HTML/CSS </li>
+                                      </ul>
+                                    </p>
+                                  <p> <b> Skills I learned or became better at: </b>
+                                    <ul>
+                                      <li> Using the Google Calendar API  </li>
+                                      <li> Using DataStore and Appengine</li>
+                                      <li>Working collaborativley in group and participating in code reviews</li>
+                                    </ul>
+                                  </p>
+                                </div>
+                              </div>        
                             </div>  
 
+                            <!-- Koodos -->
+                            <div class="single-portfolio col-sm-4 all personal">
+                              <div class="relative">
+                                <div class="thumb">
+                                  <div class="overlay overlay-bg"></div>
+                                   <center> <img id = "logo" width = "200px" height = "100px" src="images/koodos.png" alt=""> </center>
+                                </div>                                
+                              </div>
+                              <div class="p-inner">
+                                <h4 id="myKoodos"><u> Koodos </u></h4>
+                                <div class="cat"> Winter 2020 Internship </div>
+                              </div>          
+                              <div id="myKoodosModal" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                  <span id="cK" class=" close">&times;</span>
+                                   <center> <h5> I worked as a software engineer at <a class = "link" href = "https://koodos.com/about" > Koodos </a> </h5> </center>
+                                    <br>
+                                    <p> I contributed towards the first launch of a content curation service built over messaging which uses emojis as a method of search and discovery </p>
+
+                                    <p> Served as a core developer on the ‘Emoji Handle Project’ which allows users to easily search for music recommendations which successfully increased user acquisition and retention </p>
+
+                                    <p>Developing ‘The Koodos Quiz’, a smart quiz that guesses a user’s ‘emoji identity’ based on a series of questions to increase user onboarding.</p>
+
+                                    <p> <b> Tools/Languages I used: </b>
+                                      <ul>
+                                        <li> Go </li>
+                                        <li> Javascript </li>
+                                        <li> SQL </li>
+                                      </ul>
+                                    </p>
+                                </div>
+                              </div>     
+                            </div>
+
 
                             <div class="single-portfolio col-sm-4 all personal">
                               <div class="relative">
                                 <div class="thumb">
                                   <div class="overlay overlay-bg"></div>
-                                   <img class="image img-fluid" src="images/homo.png" alt="">
+                                   <center> <img id = "logo" width = "200px" src="images/ho.png" alt=""> </center>
                                 </div>
-                 <!--  <a href="images/p3.jpg" class="img-pop-up">  
-                    <div class="middle">
-                      <div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
-                    </div>
-                  </a>  -->
-                                  
                               </div>
-                                <div class="p-inner">
-                                  <h4 id="myHomophily" class="myBtn"><u> Homophily </u> </h4>
-                                    <div class="cat">Data Processing and Visualization</div>
-                                </div>
-                                <!-- MODAL -->
-                                <div id="myHomophilyModal" class="modal">
-
-                          <!-- Modal content -->
+                              <div class="p-inner">
+                                <h4 id="myHomophily" class="myBtn"><u> Homophily </u> </h4>
+                                  <div class="cat">Data Processing and Visualization</div>
+                              </div>
+                              <!-- MODAL -->
+                              <div id="myHomophilyModal" class="modal">
+                                <!-- Modal content -->
                                 <div class="modal-content">
                                   <span id="cH" class="close">&times;</span>
-                                     <center> <h5> This project was a part of my internship at the Data Science Institute at Columbia University </h5> </center>
-                                     <br> 
-                                      <p>  I worked with a team of graduate students from the school of architecture to help build an exhibit about homophily. The exhibit focuses on the  urban and architectural origin of the neologism <b> homophily</b>, its <b> abstraction, bias </b> and <b> proliferation </b> as an <b> algorithm in network science</b>. The exhibit will open in September 2019 at the Chicago Cultural Center</p>
+                                   <center> <h5> This project was a part of my internship at the Data Science Institute at Columbia University </h5> </center>
+                                   
+                                   <a href = "https://www.e-flux.com/architecture/are-friends-electric/289193/homophily-the-urban-history-of-an-algorithm/"> View the project here </a> and <a href = "https://c4sr.columbia.edu/projects/homophily-urban-history-algorithm"> here </a>
+                                   <br> 
+                                   <p>  I worked with a team of graduate students from the school of architecture to help build an exhibit about homophily. The exhibit focuses on the  urban and architectural origin of the neologism <b> homophily</b>, its <b> abstraction, bias </b> and <b> proliferation </b> as an <b> algorithm in network science</b>. The exhibit will open in September 2019 at the Chicago Cultural Center</p>
+                                   <p>My specific task in this project was processing archives using <b> natural language procesing</b>, and using that data to create <b> animations and visualizations </b> to be displayed on the exterior and interior of the exhibit </p>
+                                   <center> <img src="images/exhibit.png" alt=""> </center>
+                                   <br> 
+                                   <p> For one of the animations (an interactive word tree), I used NLP to parse data and d3.js to visualize it: </p>
+                                   <a href = "https://github.com/juvariashahid/WordTree"> View the github repo  </a>
 
-                                      <p>My specific task in this project was processing archives using <b> natural language procesing</b>, and using that data to create <b> animations and visualizations </b> to be displayed on the exterior and interior of the exhibit </p>
 
-                                      <p> For one of the animations (an interactive word tree), I used NLP to parse data and d3.js to visualize it: </p>
-                                      <a href = "https://github.com/juvariashahid/WordTree"> View the github repo  </a>
-                                      <!-- <a href = "https://github.com/juvariashahid/team-28-codeu"> View my code </a> -->
-
-                                      <br>
-                                      <p> <b>Tools/Languages I used: </b>
-                                        <ul>
-                                          <li> Python</li>
-                                          <li> Javascript (d3.js, p5.js) </li>
-                                          <li> C (Arduino Programming) </li>
-                                        </ul>
-                                      </p>
-
-                                      <p> <b> Skills I learned or became better at: </b>
-                                        <ul id = "list">
-                                          <li> Natural Language Processing  </li>
-                                          <li> Working with large sets of data</li>
-                                          <li> Working collaboratively with peers to create software to use in production</li>
-                                      
-                                        </ul>
-                                      </p>
-
+                                  <br>
+                                  <p> <b>Tools/Languages I used: </b>
+                                  <ul>
+                                    <li> Python</li>
+                                    <li> Javascript (d3.js, p5.js) </li>
+                                    <li> C (Arduino Programming) </li>
+                                  </ul>
+                                  </p>
+                                  <p> <b> Skills I learned or became better at: </b>
+                                  <ul id = "list">
+                                    <li> Natural Language Processing  </li>
+                                    <li> Working with large sets of data</li>
+                                    <li> Working collaboratively with peers to create software to use in production</li>
+                                  </ul>
+                                  </p>
                                 </div>
-
                               </div> 
-
                             </div>
-
 
                             <div class="single-portfolio col-sm-4 all personal">
                               <div class="relative">
                                 <div class="thumb">
                                   <div class="overlay overlay-bg"></div>
-                                   <img width= "100" class="image img-fluid" src="images/timer.png" alt="">
-                                </div>
-<!--                   <a href="images/p4.jpg" class="img-pop-up">  
-                    <div class="middle">
-                      <div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
-                    </div>
-                  </a>    -->                             
-                              </div> 
-                                <div class="p-inner">
-                                  <h4 id="myDrop"> <u> Drop Solution </u> </h4>
-                                    <div class="cat">Google Chrome Extension</div>
-                                </div>
-
-                                <div id="myDropModal" class="modal">
-
-                          <!-- Modal content -->
-                                <div class="modal-content">
-                                  <span id="cD" class="close">&times;</span>
-                                    <center> <h5> Drop Solutions is a Google Chrome extension to keep track of a user's screen time! </h5> </center>
-                                    <br> 
-                                   <center>  <img width= "300" src = "images/drop1.png"> 
-                                   <img src = "images/drop2.png"> </center>
-                                    <p> I created this Google Chrome extension during DevFest, Columbia University's annual hackathon</p>
-                                    <br>
-                                     
-                                     <a class = "link" href = "https://github.com/juvariashahid/Drop"> View the code here </a>
-                                    <br>
-
-                                    <p> <b> Tools/Languages I used: </b>
-                                      <ul>
-                                        <li> JavaScript</li>
-                                      </ul>
-                                    </p>
-
-                                    <p> <b>  Skills I learned or became better at: </b>
-                                      <ul id = "list">
-                                        <li> Creating a Google Chrome extension! </li>
-                                    
-                                      </ul>
-                                    </p>
-
-                                </div>
-
-                              </div> 
-
-                            </div>
-
-
-
-
-
-                            <div class="single-portfolio col-sm-4 all class">
-                              <div class="relative">
-                              <div class="thumb">
-                                  <div class="overlay overlay-bg"></div>
-                                   <img class="image img-fluid" src="images/giphy.gif" alt="">
-                                </div>
-                 <!--  <a href="images/p5.jpg" class="img-pop-up">  
-                    <div class="middle">
-                      <div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
-                    </div>
-                  </a>   -->                              
+                                   <center> <img id = "logo" class = "scale-down" height = "150px" src="images/aoe2.png" alt=""> </center>
+                                </div>                            
                               </div>
-                                <div class="p-inner">
-                                  <h4 id="myWeb"> <u> Web Server</u> </h4>
-                                    <div class="cat">COMS W3157: Advanced Programming</div>
-                                </div>
-
-                                 <div id="myWebModal" class="modal">
-
-                          <!-- Modal content -->
-                                <div class="modal-content">
-                                  <span id="cW" class="close">&times;</span>
-                                    <center> <h5> I created a web server from scratch for my Advanced Programming class </h5> </center>
-                                    <p> The web server implements a subset of HTTP 1.0, and handls GET requests for static content. In addition, it returns dynamic content by searching through a database.</p>
-
-
-                                    <p> <b> Tools/Languages I used: </b>
-                                      <ul>
-                                        <li> C </li>
-                                      </ul>
-                                    </p>
-
-                                    <p> <b> Skills I learned or became better at: </b>
-                                      <ul id = "list">
-                                        <li> Socket Programming</li>
-                                        <li> I/O in C, TCP/IP</li>
-                                        <li> process management in UNIX</li>
-                                  
-                                    
-                                      </ul>
-                                    </p>
-
-                                </div>
-
-                              </div> 
-
-
-
-                            </div>
-
-
-
-                            <div class="single-portfolio col-sm-4 all class">
-                              <div class="relative">
-                                <div class="thumb">
-                                  <div class="overlay overlay-bg"></div>
-                                   <img  width = "5000" id = "python" class="image img-fluid" src="images/py.png" alt="">
-                                </div>
-               <!--    <a href="images/p6.jpg" class="img-pop-up">  
-                    <div class="middle">
-                      <div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
-                    </div>
-                  </a>  -->                               
+                              <div class="p-inner">
+                                <h4 id="myAOE"> <u> Tamagotchi Arduino </u>  </h4>
+                                  <div class="cat">An Art of Engineering Project </div>
                               </div>
-                                <div class="p-inner">
-                                  <h4 id="myPython"><u>  Python Data Visualization </u>  </h4>
-                                    <div class="cat">ENGI 1002: Python</div>
-                                </div>
-
-                               <div id="myPythonModal" class="modal">
-
-                          <!-- Modal content -->
-                                <div class="modal-content">
-                                  <span id="cP" class="close">&times;</span>
-                                    <center> <h5> For my Intro to Python class, I simulated the outbreak of an infectious disease </h5> </center>
-                                    <p> </p>
-                                    <p> The model created was based on the SRI-model: At any time, the map can be in one of the three states: susceptible, resistant, and infected. Once a cell is infected, it has the potential to infect neighboring cells. Initally, one cell is infected and all other cells are susceptible </p>
-                                  <p> Time is measured in discrete steps. After a number of steps, the disease will have spread and infected a number of cells. Some may have recovered and others may have died.</p>
-
-                                  <center> <img width="300" src = "images/python.png"> </center>
-
-
-                                  <p> <b> Tools/Languages I used: </b>
-                                    <ul>
-                                      <li> Anaconda Notebook </li>
-                                      <li> Python </li>
-
-                                    </ul>
-                                  </p>
-
-                                  <p> <b> Skills I learned or became better at: </b>
-                                    <ul id = "list">
-                                      <li> Working with data structures in Python </li>
-                                      <li> Data Visualization </li>
-                                    </ul>
-                                  </p>
-
-                                </div>
-
-                              </div> 
-                            </div>
-
-
-                <div class="single-portfolio col-sm-4 all class">
-                              <div class="relative">
-                                <div class="thumb">
-                                  <div class="overlay overlay-bg"></div>
-                                   <img class="image img-fluid" src="images/aoepic.png" alt="">
-                                   
-                                </div>
-                <!--   <a href="images/p6.jpg" class="img-pop-up">  
-                    <div class="middle">
-                      <div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
-                    </div>
-                  </a>   -->                              
-                              </div>
-                                <div class="p-inner">
-                                  <h4 id="myAOE"> <u> Tamagotchi Arduino </u>  </h4>
-                                    <div class="cat">An Art of Engineering Project </div>
-                                </div>
-
-                                <div id="myAOEModal" class="modal">
-
-                          <!-- Modal content -->
+                              <div id="myAOEModal" class="modal">
+                                <!-- Modal content -->
                                 <div class="modal-content">
                                   <span id="cA" class="close">&times;</span>
                                     <center><h5> For my Art of Engineering class, I created a clone of Tamagotchi using Arduino </h5></center>
@@ -712,14 +694,12 @@
                                       <source src="movie.ogg" type="video/ogg">
                                     Your browser does not support the video tag.
                                     </video> </center>
-                          
                                   <p> <b> Tools/Languages I used: </b>
                                     <ul>
                                       <li> C (Arduino Programming)</li>
                                       <li> Arduino IDE </li>
                                     </ul>
                                   </p>
-
                                   <p> <b> Skills I learned or became better at: </b>
                                     <ul id = "list">
                                      <li> Programming an Arduino </li>
@@ -727,20 +707,124 @@
                                       <li> Using a Laser Cutter machine </li>
                                     </ul>
                                   </p>
-
                                 </div>
-
                               </div> 
-
                             </div>
 
 
+                            <div class="single-portfolio col-sm-4 all personal">
+                              <div class="relative">
+                                <div class="thumb">
+                                    <div class="overlay overlay-bg"></div>
+                                     <center> <img id = "logo" src="images/giphy.gif" alt=""> </center>
+                                </div>                       
+                              </div>
+                              <div class="p-inner">
+                                <h4 id="myWeb"> <u> Web Server</u> </h4>
+                                  <div class="cat">COMS W3157: Advanced Programming</div>
+                              </div>
+                              <div id="myWebModal" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                  <span id="cW" class="close">&times;</span>
+                                    <center> <h5> I created a web server from scratch for my Advanced Programming class </h5> </center>
+                                    <p> The web server implements a subset of HTTP 1.0, and handls GET requests for static content. In addition, it returns dynamic content by searching through a database.</p>
+                                    <p> <b> Tools/Languages I used: </b>
+                                      <ul>
+                                        <li> C </li>
+                                      </ul>
+                                    </p>
+                                    <p> <b> Skills I learned or became better at: </b>
+                                      <ul id = "list">
+                                        <li> Socket Programming</li>
+                                        <li> I/O in C, TCP/IP</li>
+                                        <li> process management in UNIX</li>
+                                      </ul>
+                                    </p>
+                                </div>
+                              </div> 
+                            </div>
+
+                            <div class="single-portfolio col-sm-4 all personal">
+                              <div class="relative">
+                                <div class="thumb">
+                                  <div class="overlay overlay-bg"></div>
+                                   <center> <img id = "logo"  src="images/py.png" alt=""> </center>
+                                </div>                            
+                              </div>
+                              <div class="p-inner">
+                                <h4 id="myPython"><u>  Python Data Visualization </u>  </h4>
+                                  <div class="cat">ENGI 1002: Python</div>
+                              </div>
+                              <div id="myPythonModal" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                  <span id="cP" class="close">&times;</span>
+                                  <center> <h5> For my Intro to Python class, I simulated the outbreak of an infectious disease </h5> </center>
+                                  <p> </p>
+                                  <p> The model created was based on the SRI-model: At any time, the map can be in one of the three states: susceptible, resistant, and infected. Once a cell is infected, it has the potential to infect neighboring cells. Initally, one cell is infected and all other cells are susceptible </p>
+                                  <p> Time is measured in discrete steps. After a number of steps, the disease will have spread and infected a number of cells. Some may have recovered and others may have died.</p>
+                                  <center> <img width="300" src = "images/python.png"> </center>
+                                  <p> <b> Tools/Languages I used: </b>
+                                    <ul>
+                                      <li> Anaconda Notebook </li>
+                                      <li> Python </li>
+
+                                    </ul>
+                                  </p>
+                                  <p> <b> Skills I learned or became better at: </b>
+                                    <ul id = "list">
+                                      <li> Working with data structures in Python </li>
+                                      <li> Data Visualization </li>
+                                    </ul>
+                                  </p>
+                                </div>
+                              </div> 
+                            </div>
+
+                             
+
+                             <div class="single-portfolio col-sm-4 all personal">
+                              <div class="relative">
+                                <div class="thumb">
+                                  <div class="overlay overlay-bg"></div>
+                                   <center> <img id = "logo"  src="images/timer.png" alt=""> </center>
+                                </div>                           
+                              </div> 
+                                <div class="p-inner">
+                                  <h4 id="myDrop"> <u> Drop Solution </u> </h4>
+                                    <div class="cat">Google Chrome Extension</div>
+                                </div>
+                                <div id="myDropModal" class="modal">
+                                  <!-- Modal content -->
+                                  <div class="modal-content">
+                                    <span id="cD" class="close">&times;</span>
+                                      <center> <h5> Drop Solutions is a Google Chrome extension to keep track of a user's screen time! </h5> </center>
+                                      <br> 
+                                     <center> 
+                                     <img width="100px" src = "images/drop2.png"> </center>
+                                      <p> I created this Google Chrome extension during DevFest, Columbia University's annual hackathon</p>
+                                      <br>
+                                      <a class = "link" href = "https://github.com/juvariashahid/Drop"> View the code here </a>
+                                      <br>
+                                      <p> <b> Tools/Languages I used: </b>
+                                        <ul>
+                                          <li> JavaScript</li>
+                                      </ul>
+                                    </p>
+                                    <p> <b>  Skills I learned or became better at: </b>
+                                      <ul id = "list">
+                                        <li> Creating a Google Chrome extension! </li>
+                                      </ul>
+                                    </p>
+                                </div>
+                              </div> 
+                            </div>
                         </div>
                     </div>
       </div>
     </section>
-    <!-- .section -->
-<!--  -->
+
 
    <!--  <section class="site-section" id="section-blog">
       <div class="container">
@@ -809,9 +893,9 @@
             <div class="section-heading text-center">
               <h2>Contact <strong>Me</strong> </h2>
             </div>
-          </div>
+          </div> -->
           
-          <div class="col-md-7 mb-5 mb-md-0">
+          <!-- <div class="col-md-7 mb-5 mb-md-0">
             <form action="" class="site-form">
               <h3 class="mb-5">Get In Touch</h3>
               <div class="form-group">
@@ -832,8 +916,8 @@
             </form>
           </div>
           <div class="col-md-5 pl-md-5">
-            <img id="contact"  src="images/far.jpg"> -->
-            <!-- <h3 class="mb-5">My Contact Details</h3>
+            <img id="contact"  src="images/far.jpg">
+            <h3 class="mb-5">My Contact Details</h3>
             <ul class="site-contact-details">
               <li>
                 <span class="text-uppercase">Email</span>
@@ -853,11 +937,11 @@
                 4th Floor8 Lower  <br>
                 San Francisco street, M1 50F
               </li>
-            </ul> -->
-         <!--  </div>
+            </ul>
+          </div>
         </div>
-      </div>
-    </section> -->
+      </div> -->
+    <!-- </section> -->
 
 
 <!--     <footer class="site-footer">
